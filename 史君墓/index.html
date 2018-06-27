@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<html>
+    <script type= "text/javascript">
+        var isBuilderMode =false; 
+        var winFixWidth = 1024, winFixHeight = 768;
+        var ResizePolicy = 3;
+    </script>
+    <head>
+        <title>北周史君墓</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	    <meta name='viewport' content='width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0'>
+	    <meta name="apple-touch-fullscreen" content="YES">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+	    <script src="scripts/jquery-3.3.1.js" type="text/javascript"></script>
+        <script src="scripts/three.min.js" type="text/javascript"></script>
+        <script src="scripts/jquery-ui.js"></script>
+        <style type="text/css">
+            body{
+                background-color:#a39146;
+                background-image:url('images/background.png');
+                background-repeat:no-repeat; 
+                margin: 0 0 0 0 ;
+                width:'100%'
+            }
+            .front{
+                pointer-events: auto; 
+                background-image: url('images/front.png'); 
+                background-size: 100% 100%; 
+                background-repeat: no-repeat; 
+                position: absolute; 
+                left: 180px; 
+                top: 180px; 
+                width: 754px; 
+                height: 498px; 
+                opacity: 1; 
+                transform-origin: 50% 50% 0px; 
+                transform: translate(0px, 0px) rotate(0deg) skew(0deg, 0deg) scale(1, 1); 
+                z-index: 10;
+            }
+            .cell{
+                display: table-cell;
+                vertical-align: middle;
+            }
+            .title{
+                pointer-events: auto; 
+                background-image: url('images/title.png'); 
+                background-size: 100% 100%; 
+                background-repeat: no-repeat; 
+                position: absolute; 
+                width: 45px; 
+                height: 108px; 
+                opacity: 1; 
+                transform-origin: 50% 50% 0px; 
+                transform: translate(0px, 0px) rotate(0deg) skew(0deg, 0deg) scale(1, 1); 
+               
+            }
+            a{ 
+                color:#141414; 
+                text-decoration:none; 
+                font-family:Georgia, serif;
+                font-size:32px;
+                text-align: center;
+                vertical-align: middle
+            }/* 链接默认为红色 */ 
+            a:hover{
+                 color:#7F1e1f; 
+                 text-decoration:none; 
+                 font-family:Georgia, serif;
+                 font-size:32px;
+                 
+                text-align: center;
+                vertical-align: middle
+            }/* 鼠标悬停黑色 */ 
+        </style>
+        <script type="text/javascript">
+            $( function() {
+                $("#dialog1").dialog(genDialogOption());
+                $("#dialog2").dialog(genDialogOption());
+                var dialog3 = genDialogOption();
+                dialog3.width=480;
+                $("#dialog3").dialog(dialog3);
+
+                var dialog4 = genDialogOption();
+                dialog4.width=330;
+                $("#dialog4").dialog(dialog4);
+
+                $("#dialog5").dialog(genDialogOption());
+
+                $("#opener1").on("click", function() {
+                    $("#dialog1").dialog( "open" );
+                });
+
+                $("#opener2").on("click", function() {
+                    $("#dialog2").dialog( "open" );
+                });
+
+                $("#opener3").on("click", function() {
+                    $("#dialog3").dialog( "open" );
+                });
+
+                $("#opener4").on("click", function() {
+                    $("#dialog4").dialog( "open" );
+                });
+
+                $("#opener5").on("click", function() {
+                    $("#dialog5").dialog( "open" );
+                });
+
+                $("#showprevious").on("click", function() {
+                    $("#divFront").attr("style", "background-image: url('images/left.png'); width:515px"); 
+
+                });
+
+                $("#shownext").on("click", function() {
+                    $("#divFront").attr("style", "background-image: url('images/right.png');width:498px"); 
+                });
+            } );
+
+            function genDialogOption(){
+                return {
+                        autoOpen: false,
+                        show: {
+                            effect: "blind",
+                            duration: 1000
+                        },
+                        hide: {
+                            effect: "explode",
+                            duration: 1000
+                        },
+                        width: 620
+                  };
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <div class='cell'>
+            <div id="divFront" class='front'></div>
+            <button id="opener1" class='title' style='left: 280px; top: 40px;font-size: 18px'>两侧伎乐</button>
+            <button id="opener2" class='title' style='left: 340px; top: 40px;font-size: 18px'>两侧棂窗</button>
+            <button id="opener3" class='title' style='left: 400px; top: 40px;font-size: 18px'>两侧穆护</button>
+            <button id="opener4" class='title' style='left: 460px; top: 40px;font-size: 18px'>四臂神</button>
+            <button id="opener5" class='title' style='left: 520px; top: 40px;font-size: 18px'>门楣</a></button>
+            
+            <button id="shownext" class='title' style='left: 910px; top: 40px;font-size: 18px'>正面</button>
+            <button id="showprevious" class='title' style='left: 970px; top: 40px;font-size: 18px'>背面</button>
+            <button id="shownext" class='title' style='left: 970px; top: 340px;font-size: 18px'>右侧面</button>
+            <button id="showprevious" class='title' style='left: 100px; top: 340px;font-size: 18px'>左侧面</button>
+            
+        </div> 
+
+        <div id="dialog1" title="两侧伎乐">
+            <p>
+                <div>
+                    <div style='float:left'>
+                        <img src='images/front-left-1.png' style='width:420px'/>
+                    </div>
+                    <div style='height:220px'>
+                        <p>左侧直棂窗上四个伎乐, 伎乐身穿长袍，所持乐器从左至右分别为排箫、横笛、曲颈琵琶、箜篌。</p>
+                    </div>
+                </div>
+            </p>
+            <p>
+                <div>
+                    <div style='float:left'>
+                        <img src='images/front-right-1.png' style='width:420px'/>
+                    </div>
+                    <div>
+                        <p>右侧直棂窗上四个伎乐, 伎乐所持乐器从左至右分别为曲颈琵琶、腰鼓、羯鼓、筚篥。</p>
+                    </div>
+                </div>
+            </p>
+        </div>
+
+        <div id="dialog2" title="两侧棂窗">
+                <p>
+                        <div>
+                            <div style='float:left'>
+                                <img src='images/front-left-2.png' style='width:420px'/>
+                            </div>
+                            <div style='height:320px'>
+                                <p>左侧直棂窗位于两再次间的正中, 东窗高0.3 、宽0.25 米。每窗都竖立直棂8 根, 每根宽1.1厘米, 直棂的横截面为三角形。</p>
+                                <p>直棂窗两侧各有一侍者。</p>
+                            </div>
+                        </div>
+                    </p>
+                    <p>
+                        <div>
+                            <div style='float:left'>
+                                <img src='images/front-right-2.png' style='width:420px'/>
+                            </div>
+                            <div>
+                                <p>右侧直棂窗位于两再次间的正中, 东窗高0.28 、宽0.25 米。每窗都竖立直棂8 根, 每根宽1.1厘米, 直棂的横截面为三角形。</p>
+                                <p>直棂窗两侧也各有一侍者，两侧侍者各自拿着不同的物品。</p>
+                            </div>
+                        </div>
+                    </p>
+        </div>
+        <div id="dialog3" title="左侧穆护">
+            <div>
+                <img src='images/front-left-3.png' style='width:450px'/>
+            </div>
+            <div>
+                <p>直棂窗下有一个戴口罩的人身鹰足的祭司———穆护, 正在行祭，手持火棍或夹子, 奉献祭品，守护火坛。</p>
+                <p>穆护是琐罗亚斯德教的传教士，古波斯称祭司为“Mogu”，翻译为“穆护”。教徒在行祭时，需带口罩，最早或为防止烟火气，后来成为祭司行祭时的象征物品。</p>
+            </div>
+        </div>
+
+        <div id="dialog4" title="四臂神">
+            <div>
+                <img src='images/front-left-4.png' style='width:300px'/>
+            </div>
+            <div>
+                <p>采用高浮雕手法的脚踏小鬼的四臂守护神。</p>
+                <p></p>
+            </div>
+        </div>
+
+        <div id="dialog5" title="门楣">
+            <div>
+                <img src='images/front-top-1.png' style='width:600px'/>
+            </div>
+            <div>
+                <img src='images/front-top-2.png' style='width:600px'/>
+            </div>
+                <div>
+                    <p>门楣刻有粟特文和汉文墓志，描述了墓主人的生平。粟特文部分由日本神户外国语大学吉田丰翻译成英文，汉文部分已有残缺。</p>
+                    <p>粟特文与汉文对照之后的白话意译文：</p>
+                    <p>石堂为大周大象二年(即公元580年2 月23 日)所建。居住在姑臧的史君, 获封北周凉州萨保。他是粟特显贵，名叫尉各伽,是阿奴伽之子，其祖父是萨保阿史盘陀。史君和妻子康氏于公元519年六月初七在西平结为连理。公元579年五月初七, 史君在长安去世。相隔一月之后，史君的妻子也去世。世间之人，无人能逃脱死亡，人这一生缺憾波折，此间最难得的是, 夫妻间的守望相助，白头偕老。他们于这世间相伴一生，也会在天国继续相伴。为了史君父母的死后安宁，他们的三个儿子毗黎沙漫盘陀、射勿盘陀和拂露吐盘陀修建了这个石堂。</p>
+                </div>
+            </div>
+    </body>
+</html>
