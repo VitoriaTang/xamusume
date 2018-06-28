@@ -72,18 +72,16 @@
                 text-align: center;
                 vertical-align: middle
             }/* 鼠标悬停黑色 */ 
+            p{
+                font-size: 0.75em;
+            }
         </style>
         <script type="text/javascript">
             $( function() {
                 $("#dialog1").dialog(genDialogOption());
                 $("#dialog2").dialog(genDialogOption());
-                var dialog3 = genDialogOption();
-                dialog3.width=480;
-                $("#dialog3").dialog(dialog3);
-
-                var dialog4 = genDialogOption();
-                dialog4.width=330;
-                $("#dialog4").dialog(dialog4);
+                $("#dialog3").dialog(genDialogOption());
+                $("#dialog4").dialog(genDialogOption());
                 $("#dialog5").dialog(genDialogOption());
 
 
@@ -159,7 +157,7 @@
                             effect: "explode",
                             duration: 1000
                         },
-                        width: 620
+                        width: 520
                   };
             }
 
@@ -238,7 +236,7 @@
                     <div style='float:left'>
                         <img src='images/front-left-1.jpg'/>
                     </div>
-                    <div style='height:220px'>
+                    <div style='height:170px'>
                         <p>左侧直棂窗上四个伎乐, 伎乐身穿长袍，所持乐器从左至右分别为排箫、横笛、曲颈琵琶、箜篌。</p>
                     </div>
                 </div>
@@ -256,61 +254,72 @@
         </div>
 
         <div id="dialog2" title="两侧棂窗">
-                <p>
-                        <div>
-                            <div style='float:left'>
-                                <img src='images/front-left-2.jpg'/>
-                            </div>
-                            <div style='height:320px'>
-                                <p>左侧直棂窗位于两再次间的正中, 东窗高0.3 、宽0.25 米。每窗都竖立直棂8 根, 每根宽1.1厘米, 直棂的横截面为三角形。</p>
-                                <p>直棂窗两侧各有一侍者。</p>
-                            </div>
-                        </div>
-                    </p>
-                    <p>
-                        <div>
-                            <div style='float:left'>
-                                <img src='images/front-right-2.jpg'/>
-                            </div>
-                            <div>
-                                <p>右侧直棂窗位于两再次间的正中, 东窗高0.28 、宽0.25 米。每窗都竖立直棂8 根, 每根宽1.1厘米, 直棂的横截面为三角形。</p>
-                                <p>直棂窗两侧也各有一侍者，两侧侍者各自拿着不同的物品。</p>
-                            </div>
-                        </div>
-                    </p>
+            <p>
+                <div>
+                    <div style='float:left'>
+                        <img src='images/front-left-2.jpg'/>
+                    </div>
+                    <div style='height:230px'>
+                        <p>左侧直棂窗位于两再次间的正中, 东窗高0.3 、宽0.25 米。每窗都竖立直棂8 根, 每根宽1.1厘米, 直棂的横截面为三角形。</p>
+                        <p>直棂窗两侧各有一侍者。</p>
+                    </div>
+                </div>
+            </p>
+            <p>
+                <div>
+                    <div style='float:left'>
+                        <img src='images/front-right-2.jpg'/>
+                    </div>
+                    <div>
+                        <p>右侧直棂窗位于两再次间的正中, 东窗高0.28 、宽0.25 米。每窗都竖立直棂8 根, 每根宽1.1厘米, 直棂的横截面为三角形。</p>
+                        <p>直棂窗两侧也各有一侍者，两侧侍者各自拿着不同的物品。</p>
+                    </div>
+                </div>
+            </p>
         </div>
         <div id="dialog3" title="两侧穆护">
-            <div>
-                <img src='images/front-left-3.jpg'/>
-            </div>
-            <div>
-                <p>直棂窗下有一个戴口罩的人身鹰足的祭司———穆护, 正在行祭，手持火棍或夹子, 奉献祭品，守护火坛。</p>
-                <p>穆护是琐罗亚斯德教的传教士，古波斯称祭司为“Mogu”，翻译为“穆护”。教徒在行祭时，需带口罩，最早或为防止烟火气，后来成为祭司行祭时的象征物品。</p>
-            </div>
+            <p>
+                <div>
+                    <div style='float:left'>
+                        <img src='images/front-left-3.jpg'/>
+                    </div>
+                    <div style='height:280px'>
+                        <p>直棂窗下有一个戴口罩的人身鹰足的祭司———穆护, 正在行祭，手持火棍或夹子, 奉献祭品，守护火坛。</p>
+                        <p>穆护是琐罗亚斯德教的传教士，古波斯称祭司为“Mogu”，翻译为“穆护”。教徒在行祭时，需带口罩，最早或为防止烟火气，后来成为祭司行祭时的象征物品。</p>
+                    </div>
+                </div>
+            </p>    
         </div>
 
         <div id="dialog4" title="四臂神祗">
-            <div>
-                <img src='images/front-left-4.jpg'/>
-            </div>
-            <div>
-                <p>采用高浮雕手法的脚踏小鬼的四臂守护神。</p>
-                <p></p>
-            </div>
+            <p>
+                <div>
+                    <div style='float:left'>
+                        <img src='images/front-left-4.jpg'/>
+                    </div>
+                    <div style='height:400px'>
+                        <p>采用高浮雕手法的脚踏小鬼的四臂守护神。</p>
+                    </div>
+                </div>
+            </p>
         </div>
 
         <div id="dialog5" title="门楣墓志">
-            <div>
-                <img src='images/front-top-1.jpg' />
-            </div>
-            <div>
-                <img src='images/front-top-2.jpg'/>
-            </div>
+            <p>
                 <div>
-                    <p>门楣刻有粟特文和汉文墓志，描述了墓主人的生平。粟特文部分由日本神户外国语大学吉田丰翻译成英文，汉文部分已有残缺。</p>
-                    <p>粟特文与汉文对照之后的白话意译文：</p>
-                    <p>石堂为大周大象二年(即公元580年2 月23 日)所建。居住在姑臧的史君, 获封北周凉州萨保。他是粟特显贵，名叫尉各伽,是阿奴伽之子，其祖父是萨保阿史盘陀。史君和妻子康氏于公元519年六月初七在西平结为连理。公元579年五月初七, 史君在长安去世。相隔一月之后，史君的妻子也去世。世间之人，无人能逃脱死亡，人这一生缺憾波折，此间最难得的是, 夫妻间的守望相助，白头偕老。他们于这世间相伴一生，也会在天国继续相伴。为了史君父母的死后安宁，他们的三个儿子毗黎沙漫盘陀、射勿盘陀和拂露吐盘陀修建了这个石堂。</p>
+                    <div  style='float:left'>
+                        <img src='images/front-top-1.jpg' />
+                    </div>
+                    <div  style='float:left'>
+                        <img src='images/front-top-2.jpg'/>
+                    </div>
+                    <div style='height:240px;'>
+                        <p>门楣刻有粟特文和汉文墓志，描述了墓主人的生平。粟特文部分由日本神户外国语大学吉田丰翻译成英文，汉文部分已有残缺。</p>
+                        <p>粟特文与汉文对照之后的白话意译文：</p>
+                        <p>石堂为大周大象二年(即公元580年2 月23 日)所建。居住在姑臧的史君, 获封北周凉州萨保。他是粟特显贵，名叫尉各伽,是阿奴伽之子，其祖父是萨保阿史盘陀。史君和妻子康氏于公元519年六月初七在西平结为连理。公元579年五月初七, 史君在长安去世。相隔一月之后，史君的妻子也去世。世间之人，无人能逃脱死亡，人这一生缺憾波折，此间最难得的是, 夫妻间的守望相助，白头偕老。他们于这世间相伴一生，也会在天国继续相伴。为了史君父母的死后安宁，他们的三个儿子毗黎沙漫盘陀、射勿盘陀和拂露吐盘陀修建了这个石堂。</p>
+                    </div>
                 </div>
+            </p>
         </div>
 
         <!--left-->
@@ -320,7 +329,7 @@
                     <div style='float:left'>
                         <img src='images/left-1.jpg'/>
                     </div>
-                    <div style='height:320px; padding-left:320px'>
+                    <div style='height:320px; '>
                         <p>画面中一个神正在对周围一切众生讲经说法。</p>
                         <p>画面上部中心位置有一个交脚盘坐于莲花宝座上的神像, 身后有椭圆形背光。该神头挽小髻, 面有棍须,右臂弯曲上举,右手小拇指上翘,左臂微曲,左手置于胸前,袒右肩,披帛搭于左肩上,似在讲经说法。</p>
                         <p>神像的右下方铺有一块椭圆形毯子, 毯子上跪坐一对男女, 男子居前, 两手合十, 向上伸举。在神像的左右两侧及左下方各有三个男子, 或跪或坐。</p>
@@ -337,7 +346,7 @@
                     <div style='float:left'>
                         <img src='images/left-2.jpg'/>
                     </div>
-                    <div style='height:320px; padding-left:320px'>
+                    <div style='height:320px; '>
                         <p>画面中心为一座砖砌木结构的建筑, 一对夫妇怀抱婴儿端坐其间。</p>
                         <p>男主人位于中间左侧, 头戴宝冠, 身穿圆领窄袖长袍, 腰束带, 盘腿而坐, 右手抱一男婴。女主人位于中间右侧, 头戴宝冠身披裘皮披风。</p>
                         <p>在女主人右侧站立两位侍者,右边一位怀中抱一瓶, 身穿圆领窄袖长袍,腰束带, 带下悬挂有物。台阶上放置两个瓶子, 台阶下卧有一犬。</p>
@@ -354,7 +363,7 @@
                     <div style='float:left'>
                         <img src='images/left-3.jpg' />
                     </div>
-                    <div style='height:320px; padding-left:320px'>
+                    <div style='height:320px; '>
                         <p>画面内容反映的是在山石、树丛中商队狩猎和出行的场面。</p>
                         <p>画面上部正中偏左有一位骑马弯弓射箭的男子, 头戴虚帽, 右手持弓, 左臂抬起作射箭状, 身穿交领紧身窄袖衣, 腰束带, 腰下悬挂有箭袋。其马前有五只动物, 其中一只已经中箭倒地, 其余四只依次是雄鹿、羚羊、野猪和兔子。</p>
                         <p>在骑马男子左后侧有一匹马, 右后侧有一名侍者, 左手上举架单。在山石和树木之间还有四只犬。</p>
