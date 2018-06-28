@@ -86,8 +86,8 @@
                 var dialog4 = genDialogOption();
                 dialog4.width=330;
                 $("#dialog4").dialog(dialog4);
-
                 $("#dialog5").dialog(genDialogOption());
+
 
                 $("#opener1").on("click", function() {
                     $("#dialog1").dialog( "open" );
@@ -109,13 +109,42 @@
                     $("#dialog5").dialog( "open" );
                 });
 
-                $("#showprevious").on("click", function() {
-                    $("#divFront").attr("style", "background-image: url('images/left.png'); width:515px"); 
+                //left
+                $("#dialog_left1").dialog(genDialogOption());
+                $("#dialog_left2").dialog(genDialogOption());
+                $("#dialog_left3").dialog(genDialogOption());
+
+                $("#opener_left1").on("click", function() {
+                    $("#dialog_left1").dialog( "open" );
+                });
+
+                $("#opener_left2").on("click", function() {
+                    $("#dialog_left2").dialog( "open" );
+                });
+
+                $("#opener_left3").on("click", function() {
+                    $("#dialog_left3").dialog( "open" );
+                });
+
+                $("#showfront").on("click", function() {
+                    $("#divFront").attr("style", "background-image: url('images/front.png'); ");
+                    updateButtons('front'); 
 
                 });
 
-                $("#shownext").on("click", function() {
+                $("#showback").on("click", function() {
+                    $("#divFront").attr("style", "background-image: url('images/back.png'); height:447px"); 
+                    updateButtons('back'); 
+                });
+                $("#showleft").on("click", function() {
+                    $("#divFront").attr("style", "background-image: url('images/left.png'); width:515px"); 
+                    updateButtons('left'); 
+
+                });
+
+                $("#showright").on("click", function() {
                     $("#divFront").attr("style", "background-image: url('images/right.png');width:498px"); 
+                    updateButtons('right'); 
                 });
             } );
 
@@ -134,22 +163,72 @@
                   };
             }
 
+            function updateButtons(type){
+                if(type === 'front'){
+                    $("#opener1").show();
+                    $("#opener2").show();
+                    $("#opener3").show();
+                    $("#opener4").show();
+                    $("#opener5").show(); 
+                }else{
+                    $("#opener1").hide();
+                    $("#opener2").hide();
+                    $("#opener3").hide();
+                    $("#opener4").hide();
+                    $("#opener5").hide();
+                }
+
+                if(type === 'left'){
+                    $("#opener_left1").show();
+                    $("#opener_left2").show();
+                    $("#opener_left3").show();
+                }else{
+                    $("#opener_left1").hide();
+                    $("#opener_left2").hide();
+                    $("#opener_left3").hide();
+                }
+                if(type === 'back'){
+                    $("#opener_back1").show();
+                    $("#opener_back2").show();
+                    $("#opener_back3").show();
+                    $("#opener_back4").show();
+                    $("#opener_back5").show(); 
+                }else{
+                    $("#opener_back1").hide();
+                    $("#opener_back2").hide();
+                    $("#opener_back3").hide();
+                    $("#opener_back4").hide();
+                    $("#opener_back5").hide();
+                }
+            }
 
         </script>
     </head>
     <body>
         <div class='cell'>
             <div id="divFront" class='front'></div>
-            <button id="opener1" class='title' style='left: 280px; top: 40px;font-size: 18px'>两侧伎乐</button>
-            <button id="opener2" class='title' style='left: 340px; top: 40px;font-size: 18px'>两侧棂窗</button>
-            <button id="opener3" class='title' style='left: 400px; top: 40px;font-size: 18px'>两侧穆护</button>
-            <button id="opener4" class='title' style='left: 460px; top: 40px;font-size: 18px'>四臂神</button>
-            <button id="opener5" class='title' style='left: 520px; top: 40px;font-size: 18px'>门楣</a></button>
+            <button id="opener1" class='title' style='left: 180px; top: 40px;font-size: 18px'>两侧伎乐</button>
+            <button id="opener2" class='title' style='left: 240px; top: 40px;font-size: 18px'>两侧棂窗</button>
+            <button id="opener3" class='title' style='left: 300px; top: 40px;font-size: 18px'>两侧穆护</button>
+            <button id="opener4" class='title' style='left: 360px; top: 40px;font-size: 18px'>四臂神</button>
+            <button id="opener5" class='title' style='left: 420px; top: 40px;font-size: 18px'>门楣</a></button>
             
-            <button id="shownext" class='title' style='left: 910px; top: 40px;font-size: 18px'>正面</button>
-            <button id="showprevious" class='title' style='left: 970px; top: 40px;font-size: 18px'>背面</button>
-            <button id="shownext" class='title' style='left: 970px; top: 340px;font-size: 18px'>右侧面</button>
-            <button id="showprevious" class='title' style='left: 100px; top: 340px;font-size: 18px'>左侧面</button>
+            <button id="opener_left1" class='title' style='left: 180px; top: 40px;font-size: 18px'>右起图一</button>
+            <button id="opener_left2" class='title' style='left: 240px; top: 40px;font-size: 18px'>右起图二</button>
+            <button id="opener_left3" class='title' style='left: 300px; top: 40px;font-size: 18px'>右起图三</button>
+            
+
+            <button id="opener_back1" class='title' style='left: 180px; top: 40px;font-size: 18px'>两侧伎乐</button>
+            <button id="opener_back2" class='title' style='left: 240px; top: 40px;font-size: 18px'>两侧棂窗</button>
+            <button id="opener_back3" class='title' style='left: 300px; top: 40px;font-size: 18px'>两侧穆护</button>
+            <button id="opener_back4" class='title' style='left: 360px; top: 40px;font-size: 18px'>四臂神</button>
+            <button id="opener_back5" class='title' style='left: 420px; top: 40px;font-size: 18px'>门楣</a></button>
+            
+
+            <button id="showfront" class='title' style='left: 690px; top: 40px;font-size: 18px'>正面</button>
+            <button id="showleft" class='title' style='left: 750px; top: 40px;font-size: 18px'>左侧面</button>
+            <button id="showback" class='title' style='left: 810px; top: 40px;font-size: 18px'>背面</button>
+            <button id="showright" class='title' style='left: 870px; top: 40px;font-size: 18px'>右侧面</button>
             
         </div> 
 
@@ -232,6 +311,60 @@
                     <p>粟特文与汉文对照之后的白话意译文：</p>
                     <p>石堂为大周大象二年(即公元580年2 月23 日)所建。居住在姑臧的史君, 获封北周凉州萨保。他是粟特显贵，名叫尉各伽,是阿奴伽之子，其祖父是萨保阿史盘陀。史君和妻子康氏于公元519年六月初七在西平结为连理。公元579年五月初七, 史君在长安去世。相隔一月之后，史君的妻子也去世。世间之人，无人能逃脱死亡，人这一生缺憾波折，此间最难得的是, 夫妻间的守望相助，白头偕老。他们于这世间相伴一生，也会在天国继续相伴。为了史君父母的死后安宁，他们的三个儿子毗黎沙漫盘陀、射勿盘陀和拂露吐盘陀修建了这个石堂。</p>
                 </div>
-            </div>
+        </div>
+
+        <!--left-->
+        <div id="dialog_left1" title="右起图一">
+            <p>
+                <div>
+                    <div style='float:left'>
+                        <img src='images/left-1.jpg' style='width:420px'/>
+                    </div>
+                    <div style='height:320px; padding-left:440px'>
+                        <p>画面中一个神正在对周围一切众生讲经说法。</p>
+                        <p>画面上部中心位置有一个交脚盘坐于莲花宝座上的神像, 身后有椭圆形背光。该神头挽小髻, 面有棍须,右臂弯曲上举,右手小拇指上翘,左臂微曲,左手置于胸前,袒右肩,披帛搭于左肩上,似在讲经说法。</p>
+                        <p>神像的右下方铺有一块椭圆形毯子, 毯子上跪坐一对男女, 男子居前, 两手合十, 向上伸举。在神像的左右两侧及左下方各有三个男子, 或跪或坐。</p>
+                        <p>在画面下部右侧的一块椭圆形毯子上也跪坐着五个男子, 双手合十置于胸前, 十分虔诚。在这些人周围有狮子两只, 雄鹿、羚羊、绵羊、野猪等各一只。画面的最下方是荷叶和水波,水波中有两只水禽。</p>
+                        <p>这是整个石堂最难被解读的一幅画面，专家们的一种说法是画面中的跪在毯上听法的男女是墓主人史君的父母，神为众生说法预示着部落新的统治者即将降生。</p>
+                    </div>
+                </div>
+            </p>
+        </div>
+
+        <div id="dialog_left2" title="右起图二">
+            <p>
+                <div>
+                    <div style='float:left'>
+                        <img src='images/left-2.jpg' style='width:420px'/>
+                    </div>
+                    <div style='height:320px; padding-left:440px'>
+                        <p>画面中心为一座砖砌木结构的建筑, 一对夫妇怀抱婴儿端坐其间。</p>
+                        <p>男主人位于中间左侧, 头戴宝冠, 身穿圆领窄袖长袍, 腰束带, 盘腿而坐, 右手抱一男婴。女主人位于中间右侧, 头戴宝冠身披裘皮披风。</p>
+                        <p>在女主人右侧站立两位侍者,右边一位怀中抱一瓶, 身穿圆领窄袖长袍,腰束带, 带下悬挂有物。台阶上放置两个瓶子, 台阶下卧有一犬。</p>
+                        <p>画面下部右侧有山石和水波, 左侧有一匹鞍翰俱全的马, 马前有一位跪坐的男子, 马旁边站立一位侍者。</p>
+                        <p>这是史君幼年的画面，男女主人应当是墓主人史君的父母，墓志中提及史君的父亲和祖父都是部落的首领。马匹备好，仆从站立一旁，可能正等待着小主人开启他的少年远行之旅。</p>
+                    </div>
+                </div>
+            </p>
+        </div>
+
+        <div id="dialog_left3" title="右起图二">
+            <p>
+                <div>
+                    <div style='float:left'>
+                        <img src='images/left-3.jpg' style='width:420px'/>
+                    </div>
+                    <div style='height:320px; padding-left:440px'>
+                        <p>画面内容反映的是在山石、树丛中商队狩猎和出行的场面。</p>
+                        <p>画面上部正中偏左有一位骑马弯弓射箭的男子, 头戴虚帽, 右手持弓, 左臂抬起作射箭状, 身穿交领紧身窄袖衣, 腰束带, 腰下悬挂有箭袋。其马前有五只动物, 其中一只已经中箭倒地, 其余四只依次是雄鹿、羚羊、野猪和兔子。</p>
+                        <p>在骑马男子左后侧有一匹马, 右后侧有一名侍者, 左手上举架单。在山石和树木之间还有四只犬。</p>
+                        <p>画面下部是一个由马、骆驼和驴组成的商队。</p>
+                        <p>在商队的最前面是两个骑马的男子, 其中一位腰上悬挂着箭袋。两个骑马男子身后是两头驮载货物的骆驼, 骆驼后面有一个头戴“ 船” 形帽、骑在马上的男子。</p>
+                        <p>在两头骆驼右上方, 有两匹马和一头驴驮载货物并行, 驴位于两匹马中间, 后面有一个右手持鞭的男子。骆驼脚下有水波纹,似乎跋山涉水。</p>
+                        <p>这是史君年轻时候的画面，史君曾跟随长者的商队远行，并且善骑射，在商队行进中，常常会进行狩猎，一是猎物作为食物补给，二是猎物的皮毛可以供奉给途经的当地游牧民族的部落首领。</p>
+                    </div>
+                </div>
+            </p>
+        </div>
     </body>
 </html>
