@@ -8,7 +8,7 @@
     <head>
         <title>北周史君墓</title>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	    <meta name='viewport' content='width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0'>
 	    <meta name="apple-touch-fullscreen" content="YES">
 	    <meta name="format-detection" content="telephone=no">
 	    <meta name="apple-mobile-web-app-capable" content="yes">
@@ -31,10 +31,10 @@
                 background-size: 100% 100%; 
                 background-repeat: no-repeat; 
                 position: absolute; 
-                left: 180px; 
-                top: 180px; 
-                width: 754px; 
-                height: 498px; 
+                left: 5%; 
+                top: 15%; 
+                width: 70%; 
+                height: 75%; 
                 opacity: 1; 
                 transform-origin: 50% 50% 0px; 
                 transform: translate(0px, 0px) rotate(0deg) skew(0deg, 0deg) scale(1, 1); 
@@ -50,8 +50,6 @@
                 background-size: 100% 100%; 
                 background-repeat: no-repeat; 
                 position: absolute; 
-                width: 45px; 
-                height: 108px; 
                 opacity: 1; 
                 transform-origin: 50% 50% 0px; 
                 transform: translate(0px, 0px) rotate(0deg) skew(0deg, 0deg) scale(1, 1); 
@@ -61,7 +59,7 @@
                 color:#141414; 
                 text-decoration:none; 
                 font-family:Georgia, serif;
-                font-size:32px;
+                font-size:1.5em;
                 text-align: center;
                 vertical-align: middle
             }/* 链接默认为红色 */ 
@@ -69,7 +67,7 @@
                  color:#7F1e1f; 
                  text-decoration:none; 
                  font-family:Georgia, serif;
-                 font-size:32px;
+                 font-size:1.5em;
                  
                 text-align: center;
                 vertical-align: middle
@@ -133,17 +131,17 @@
                 });
 
                 $("#showback").on("click", function() {
-                    $("#divFront").attr("style", "background-image: url('images/back.png'); height:447px"); 
+                    $("#divFront").attr("style", "background-image: url('images/back.png'); "); 
                     updateButtons('back'); 
                 });
                 $("#showleft").on("click", function() {
-                    $("#divFront").attr("style", "background-image: url('images/left.png'); width:515px"); 
+                    $("#divFront").attr("style", "background-image: url('images/left.png'); "); 
                     updateButtons('left'); 
 
                 });
 
                 $("#showright").on("click", function() {
-                    $("#divFront").attr("style", "background-image: url('images/right.png');width:498px"); 
+                    $("#divFront").attr("style", "background-image: url('images/right.png');"); 
                     updateButtons('right'); 
                 });
             } );
@@ -207,28 +205,28 @@
     <body>
         <div class='cell'>
             <div id="divFront" class='front'></div>
-            <button id="opener1" class='title' style='left: 180px; top: 40px;font-size: 18px'>两侧伎乐</button>
-            <button id="opener2" class='title' style='left: 240px; top: 40px;font-size: 18px'>两侧棂窗</button>
-            <button id="opener3" class='title' style='left: 300px; top: 40px;font-size: 18px'>两侧穆护</button>
-            <button id="opener4" class='title' style='left: 360px; top: 40px;font-size: 18px'>四臂神</button>
-            <button id="opener5" class='title' style='left: 420px; top: 40px;font-size: 18px'>门楣</a></button>
+            <button id="opener1" class='title' style='left: 8%; top: 5%;font-size: 1em'>两侧伎乐</button>
+            <button id="opener2" class='title' style='left: 15%; top: 5%;font-size: 1em'>两侧棂窗</button>
+            <button id="opener3" class='title' style='left: 22%; top: 5%;font-size: 1em'>两侧穆护</button>
+            <button id="opener4" class='title' style='left: 29%; top: 5%;font-size: 1em'>四臂神祗</button>
+            <button id="opener5" class='title' style='left: 36%; top: 5%;font-size: 1em'>石堂门楣</a></button>
             
-            <button id="opener_left1" class='title' style='left: 180px; top: 40px;font-size: 18px'>右起图一</button>
-            <button id="opener_left2" class='title' style='left: 240px; top: 40px;font-size: 18px'>右起图二</button>
-            <button id="opener_left3" class='title' style='left: 300px; top: 40px;font-size: 18px'>右起图三</button>
-            
-
-            <button id="opener_back1" class='title' style='left: 180px; top: 40px;font-size: 18px'>两侧伎乐</button>
-            <button id="opener_back2" class='title' style='left: 240px; top: 40px;font-size: 18px'>两侧棂窗</button>
-            <button id="opener_back3" class='title' style='left: 300px; top: 40px;font-size: 18px'>两侧穆护</button>
-            <button id="opener_back4" class='title' style='left: 360px; top: 40px;font-size: 18px'>四臂神</button>
-            <button id="opener_back5" class='title' style='left: 420px; top: 40px;font-size: 18px'>门楣</a></button>
+            <button id="opener_left1" class='title' style='left: 8%; top: 5%;font-size: 1em'>右起图一</button>
+            <button id="opener_left2" class='title' style='left: 15%; top: 5%;font-size: 1em'>右起图二</button>
+            <button id="opener_left3" class='title' style='left: 22%; top: 5%;;font-size: 1em'>右起图三</button>
             
 
-            <button id="showfront" class='title' style='left: 690px; top: 40px;font-size: 18px'>正面</button>
-            <button id="showleft" class='title' style='left: 750px; top: 40px;font-size: 18px'>左侧面</button>
-            <button id="showback" class='title' style='left: 810px; top: 40px;font-size: 18px'>背面</button>
-            <button id="showright" class='title' style='left: 870px; top: 40px;font-size: 18px'>右侧面</button>
+            <button id="opener_back1" class='title' style='left: 8%; top: 5%;font-size: 1em'>右起图一</button>
+            <button id="opener_back2" class='title' style='left: 15%; top: 5%;font-size: 1em'>右起图二</button>
+            <button id="opener_back3" class='title' style='left: 22%; top: 5%;font-size: 1em'>右起图三</button>
+            <button id="opener_back4" class='title' style='left: 29%; top: 5%;font-size: 1em'>右起图四</button>
+            <button id="opener_back5" class='title' style='left: 36%; top: 5%;font-size: 1em'>右起图五</a></button>
+            
+
+            <button id="showfront" class='title' style='left: 60%; top: 5%;font-size: 1em'>正&nbsp;&nbsp;面</button>
+            <button id="showleft" class='title' style='left: 66%; top: 5%;font-size: 1em'>左侧面</button>
+            <button id="showback" class='title' style='left: 72%; top: 5%;font-size: 1em'>背&nbsp;&nbsp;面</button>
+            <button id="showright" class='title' style='left: 78%; top: 5%;font-size: 1em'>右侧面</button>
             
         </div> 
 
