@@ -144,6 +144,8 @@
                     $("#divFront").attr("style", "background-image: url('images/right.png');"); 
                     updateButtons('right'); 
                 });
+
+                updateButtons('front');
             } );
 
             function genDialogOption(){
@@ -205,15 +207,15 @@
     <body>
         <div class='cell'>
             <div id="divFront" class='front'></div>
-            <button id="opener1" class='title' style='left: 8%; top: 5%;font-size: 0.75em'>两侧伎乐</button>
-            <button id="opener2" class='title' style='left: 15%; top: 5%;font-size: 0.75em'>两侧棂窗</button>
-            <button id="opener3" class='title' style='left: 22%; top: 5%;font-size: 0.75em'>两侧穆护</button>
-            <button id="opener4" class='title' style='left: 29%; top: 5%;font-size: 0.75em'>四臂神祗</button>
-            <button id="opener5" class='title' style='left: 36%; top: 5%;font-size: 0.75em'>石堂门楣</a></button>
+            <button id="opener1" class='title' style='left: 8%; top: 5%;font-size: 0.75em'>伎乐</button>
+            <button id="opener2" class='title' style='left: 15%; top: 5%;font-size: 0.75em'>棂窗</button>
+            <button id="opener3" class='title' style='left: 22%; top: 5%;font-size: 0.75em'>穆护</button>
+            <button id="opener4" class='title' style='left: 29%; top: 5%;font-size: 0.75em'>四臂神</button>
+            <button id="opener5" class='title' style='left: 36%; top: 5%;font-size: 0.75em'>门楣</a></button>
             
-            <button id="opener_left1" class='title' style='left: 8%; top: 5%;font-size: 0.75em'>右起图一</button>
-            <button id="opener_left2" class='title' style='left: 15%; top: 5%;font-size: 0.75em'>右起图二</button>
-            <button id="opener_left3" class='title' style='left: 22%; top: 5%;;font-size: 0.75em'>右起图三</button>
+            <button id="opener_left1" class='title' style='left: 8%; top: 5%;font-size: 0.75em'>缘起</button>
+            <button id="opener_left2" class='title' style='left: 15%; top: 5%;font-size: 0.75em'>少年</button>
+            <button id="opener_left3" class='title' style='left: 22%; top: 5%;;font-size: 0.75em'>青年</button>
             
 
             <button id="opener_back1" class='title' style='left: 8%; top: 5%;font-size: 0.75em'>右起图一</button>
@@ -223,10 +225,10 @@
             <button id="opener_back5" class='title' style='left: 36%; top: 5%;font-size: 0.75em'>右起图五</a></button>
             
 
-            <button id="showfront" class='title' style='left: 60%; top: 5%;font-size: 0.75em'>正&nbsp;&nbsp;面</button>
-            <button id="showleft" class='title' style='left: 66%; top: 5%;font-size: 0.75em'>左侧面</button>
-            <button id="showback" class='title' style='left: 72%; top: 5%;font-size: 0.75em'>背&nbsp;&nbsp;面</button>
-            <button id="showright" class='title' style='left: 78%; top: 5%;font-size: 0.75em'>右侧面</button>
+            <button id="showfront" class='title' style='left: 60%; top: 5%;font-size: 0.75em'>正面</button>
+            <button id="showleft" class='title' style='left: 66%; top: 5%;font-size: 0.75em'>左面</button>
+            <button id="showback" class='title' style='left: 72%; top: 5%;font-size: 0.75em'>背面</button>
+            <button id="showright" class='title' style='left: 78%; top: 5%;font-size: 0.75em'>右面</button>
             
         </div> 
 
@@ -277,7 +279,7 @@
                         </div>
                     </p>
         </div>
-        <div id="dialog3" title="左侧穆护">
+        <div id="dialog3" title="两侧穆护">
             <div>
                 <img src='images/front-left-3.jpg'/>
             </div>
@@ -297,7 +299,7 @@
             </div>
         </div>
 
-        <div id="dialog5" title="门楣">
+        <div id="dialog5" title="门楣墓志">
             <div>
                 <img src='images/front-top-1.jpg' />
             </div>
@@ -312,13 +314,13 @@
         </div>
 
         <!--left-->
-        <div id="dialog_left1" title="右起图一">
+        <div id="dialog_left1" title="右起图一 缘起">
             <p>
                 <div>
                     <div style='float:left'>
                         <img src='images/left-1.jpg'/>
                     </div>
-                    <div style='height:320px; padding-left:440px'>
+                    <div style='height:320px; padding-left:320px'>
                         <p>画面中一个神正在对周围一切众生讲经说法。</p>
                         <p>画面上部中心位置有一个交脚盘坐于莲花宝座上的神像, 身后有椭圆形背光。该神头挽小髻, 面有棍须,右臂弯曲上举,右手小拇指上翘,左臂微曲,左手置于胸前,袒右肩,披帛搭于左肩上,似在讲经说法。</p>
                         <p>神像的右下方铺有一块椭圆形毯子, 毯子上跪坐一对男女, 男子居前, 两手合十, 向上伸举。在神像的左右两侧及左下方各有三个男子, 或跪或坐。</p>
@@ -329,13 +331,13 @@
             </p>
         </div>
 
-        <div id="dialog_left2" title="右起图二">
+        <div id="dialog_left2" title="右起图二 少年">
             <p>
                 <div>
                     <div style='float:left'>
                         <img src='images/left-2.jpg'/>
                     </div>
-                    <div style='height:320px; padding-left:440px'>
+                    <div style='height:320px; padding-left:320px'>
                         <p>画面中心为一座砖砌木结构的建筑, 一对夫妇怀抱婴儿端坐其间。</p>
                         <p>男主人位于中间左侧, 头戴宝冠, 身穿圆领窄袖长袍, 腰束带, 盘腿而坐, 右手抱一男婴。女主人位于中间右侧, 头戴宝冠身披裘皮披风。</p>
                         <p>在女主人右侧站立两位侍者,右边一位怀中抱一瓶, 身穿圆领窄袖长袍,腰束带, 带下悬挂有物。台阶上放置两个瓶子, 台阶下卧有一犬。</p>
@@ -346,13 +348,13 @@
             </p>
         </div>
 
-        <div id="dialog_left3" title="右起图二">
+        <div id="dialog_left3" title="右起图三 青年">
             <p>
                 <div>
                     <div style='float:left'>
                         <img src='images/left-3.jpg' />
                     </div>
-                    <div style='height:320px; padding-left:440px'>
+                    <div style='height:320px; padding-left:320px'>
                         <p>画面内容反映的是在山石、树丛中商队狩猎和出行的场面。</p>
                         <p>画面上部正中偏左有一位骑马弯弓射箭的男子, 头戴虚帽, 右手持弓, 左臂抬起作射箭状, 身穿交领紧身窄袖衣, 腰束带, 腰下悬挂有箭袋。其马前有五只动物, 其中一只已经中箭倒地, 其余四只依次是雄鹿、羚羊、野猪和兔子。</p>
                         <p>在骑马男子左后侧有一匹马, 右后侧有一名侍者, 左手上举架单。在山石和树木之间还有四只犬。</p>
